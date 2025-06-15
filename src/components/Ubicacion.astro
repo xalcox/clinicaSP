@@ -1,0 +1,68 @@
+---
+import "../styles/global.css";
+---
+
+<section class="bg-white py-16 px-6 sm:px-12 lg:px-24">
+  <div class="max-w-7xl mx-auto text-center mb-12">
+    <h2 class="text-4xl font-bold text-[#0c4f1e] mb-2">¿Dónde estamos?</h2>
+    <p class="text-gray-600">
+      Nuestra clínica está ubicada en el distrito de Latina, Madrid. Fácil acceso y zona de aparcamiento cercana.
+    </p>
+  </div>
+
+  <!-- Mapa -->
+  <div class="w-full max-w-4xl mx-auto aspect-video mb-12 rounded-xl overflow-hidden shadow-md border border-[#7cc518]/20">
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3036.557106781371!2d-3.7434533241318867!3d40.40109887144444!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd4189fbc5c16907%3A0x2e03229f98457ed0!2sC.%20de%20Guadarrama%2C%203%2C%20Local%2C%20Latina%2C%2028011%20Madrid!5e0!3m2!1ses!2ses!4v1718455609271!5m2!1ses!2ses"
+      width="100%"
+      height="100%"
+      style="border:0;"
+      allowfullscreen=""
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"
+      title="Ubicación Clínica"
+    ></iframe>
+  </div>
+
+    <!-- Info de contacto -->
+  <div class="max-w-2xl mx-auto grid gap-4 sm:grid-cols-2 text-sm">
+    <!-- Dirección -->
+    <div class="group flex items-center gap-2 bg-[#eefdde] border border-[#a6dc84] rounded-full px-4 py-2 text-[#0c4f1e] font-medium shadow-sm transition-all duration-300 transform hover:-translate-y-1 hover:shadow-md hover:border-[#7cc518] hover:bg-[#e6fcd2]">
+      <svg class="w-5 h-5 text-[#0c4f1e] transition-transform duration-300 group-hover:scale-110 group-hover:text-[#0a3e18]" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M12 11.5a3.5 3.5 0 100-7 3.5 3.5 0 000 7z" />
+        <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 5.25-7.5 10.5-7.5 10.5s-7.5-5.25-7.5-10.5a7.5 7.5 0 1115 0z" />
+      </svg>
+      <span>C. de Guadarrama, 3, Local, Latina,<br />28011 Madrid</span>
+    </div>
+
+    <!-- Teléfono -->
+    <div class="group flex items-center gap-2 bg-[#eefdde] border border-[#a6dc84] rounded-full px-4 py-2 text-[#0c4f1e] font-medium shadow-sm transition-all duration-300 transform hover:-translate-y-1 hover:shadow-md hover:border-[#7cc518] hover:bg-[#e6fcd2]">
+      <svg class="w-5 h-5 text-[#0c4f1e] transition-transform duration-300 group-hover:scale-110 group-hover:text-[#0a3e18]" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M3 5a2 2 0 012-2h1.3a1 1 0 01.95.7l1.3 3.9a1 1 0 01-.2 1L7.6 10.6a16 16 0 006.8 6.8l1-1a1 1 0 011-.2l3.9 1.3a1 1 0 01.7.95V19a2 2 0 01-2 2h-1C9.2 21 3 14.8 3 7V5z" />
+      </svg>
+      <a href="tel:+34914635342" class="hover:underline">914 63 53 42</a>
+    </div>
+
+    <!-- Email -->
+    <div class="group flex items-center gap-2 bg-[#eefdde] border border-[#a6dc84] rounded-full px-4 py-2 text-[#0c4f1e] font-medium shadow-sm transition-all duration-300 transform hover:-translate-y-1 hover:shadow-md hover:border-[#7cc518] hover:bg-[#e6fcd2]">
+      <svg class="w-5 h-5 text-[#0c4f1e] transition-transform duration-300 group-hover:scale-110 group-hover:text-[#0a3e18]" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M16 12H8m0 0l4-4m-4 4l4 4M4 6h16a2 2 0 012 2v8a2 2 0 01-2 2H4a2 2 0 01-2-2V8a2 2 0 012-2z" />
+      </svg>
+      <a href="mailto:info@clinicaejemplo.com" class="hover:underline">info@clinicaejemplo.com</a>
+    </div>
+
+    <!-- Horario -->
+    <div class="group flex items-center gap-2 bg-[#eefdde] border border-[#a6dc84] rounded-full px-4 py-2 text-[#0c4f1e] font-medium shadow-sm transition-all duration-300 transform hover:-translate-y-1 hover:shadow-md hover:border-[#7cc518] hover:bg-[#e6fcd2]">
+      <svg class="w-5 h-5 text-[#0c4f1e] transition-transform duration-300 group-hover:scale-110 group-hover:text-[#0a3e18]" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+      </svg>
+      Lunes a Viernes, 10:00 – 14:00 y 16:00 – 20:00
+    </div>
+  </div>
+
+
+
+
+
+</section>
+
