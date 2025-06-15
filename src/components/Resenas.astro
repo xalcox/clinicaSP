@@ -1,0 +1,101 @@
+---
+import "../styles/global.css";
+// components/ResenasCarousel.astro
+import { Fragment } from "astro/jsx-runtime";
+---
+
+
+<section class="bg-gray-50 py-16 px-6 sm:px-12 lg:px-24">
+  <div class="max-w-4xl mx-auto text-center mb-12">
+    <h2 class="text-4xl font-bold text-[#0c4f1e] mb-2">Opiniones de nuestros pacientes</h2>
+    <p class="text-gray-600 mb-4">Reseñas reales extraídas de Google</p>
+    <div class="inline-flex items-center gap-2 bg-white px-4 py-2 rounded-full shadow-sm border border-[#a6dc84]/40 text-sm text-[#0c4f1e] font-medium">
+      <span>⭐ 4.9 / 5</span>
+      <span class="text-gray-500">· Basado en 100+ reseñas</span>
+      <a href="https://www.google.com/maps/place/Clínica+Dental+San+Patricio/@40.41197,-3.7341603,847m/data=!3m2!1e3!4b1!4m6!3m5!1s0xd42280827813c8d:0xdb13fe4f42e6c54d!8m2!3d40.41197!4d-3.73158!16s%2Fg%2F1z44bd79w?entry=ttu&g_ep=EgoyMDI1MDYxMS4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener noreferrer" class="ml-2 text-blue-600 hover:underline">Ver en Google</a>
+    </div>
+  </div>
+
+  <div class="relative max-w-4xl mx-auto">
+    <div class="overflow-hidden">
+      <div id="carousel" class="flex transition-transform duration-700 ease-in-out" style="transform: translateX(0%)">
+        <!-- Aquí se renderizan las reseñas desde JS -->
+      </div>
+    </div>
+
+    <!-- Botones -->
+    <div class="flex justify-between items-center mt-6 text-[#0c4f1e] font-medium">
+    <button id="prev" class="hover:underline cursor-pointer">← Anterior</button>
+    <button id="next" class="hover:underline cursor-pointer">Siguiente →</button>
+    </div>
+
+  </div>
+
+<script>
+  const reviews = [
+    { name: 'Alvin David Ruffy', text: 'Dr. Rafael es uno de los mejores dentistas que he conocido. ¡Gracias Dr.!' },
+    { name: 'Jesús García Lezcano', text: 'MARAVILLOSO. Cercano, amable. Recomendable al 1000x100.' },
+    { name: 'Salva Ruiz', text: 'Atención muy profesional y amable. Altamente recomendable.' },
+    { name: 'Marina DJS', text: 'Rafael me transmitió confianza, ni sentí la anestesia. ¡Gracias!' },
+    { name: 'Marisol G.A.', text: 'Un acierto total. Trato excelente de Rafael y su asistente.' },
+    { name: 'Ana Rodríguez', text: 'Muy buena atención y excelente profesional.' },
+    { name: 'Sofía Benítez', text: 'El mejor trato que he recibido en una clínica dental. Volveré sin dudarlo.' },
+    { name: 'Luis Méndez', text: 'Rapidez, profesionalidad y un trato muy humano. Gracias por todo.' },
+    { name: 'Claudia P.', text: 'Todo impecable, tanto el lugar como el equipo médico. 100% recomendable.' },
+    { name: 'Jorge A.', text: 'Fui con miedo y salí muy tranquilo. Explican todo con claridad y amabilidad.' },
+    { name: 'Patricia Moreno', text: 'Se nota la vocación. Muy profesionales y cercanos.' },
+    { name: 'Iván Torres', text: 'Excelente experiencia. Me atendieron sin esperas y con mucho cuidado.' }
+  ];
+
+  let active = 0;
+
+  document.addEventListener('DOMContentLoaded', () => {
+    // @ts-ignore
+    const container = document.getElementById('carousel');
+
+
+    function renderReviews() {
+        // @ts-ignore
+      container.innerHTML = '';
+      reviews.forEach((review) => {
+        const div = document.createElement('div');
+        div.className = 'min-w-full px-2';
+        div.innerHTML = `
+          <div class="bg-white rounded-xl border border-[#a6dc84]/50 shadow p-6 h-full flex flex-col justify-between">
+            <p class="text-gray-700 text-sm leading-relaxed mb-4">${review.text}</p>
+            <div class="text-[#0c4f1e] font-semibold text-sm">${review.name} · ⭐⭐⭐⭐⭐</div>
+          </div>
+        `;
+        // @ts-ignore
+        container.appendChild(div);
+      });
+    }
+
+    function updateCarousel() {
+        // @ts-ignore
+      container.style.transform = `translateX(-${active * 100}%)`;
+    }
+
+    renderReviews();
+    updateCarousel();
+    // @ts-ignore
+    document.getElementById('next').addEventListener('click', () => {
+      active = (active + 1) % reviews.length;
+      updateCarousel();
+    });
+    // @ts-ignore
+    document.getElementById('prev').addEventListener('click', () => {
+      active = (active - 1 + reviews.length) % reviews.length;
+      updateCarousel();
+    });
+
+    setInterval(() => {
+      active = (active + 1) % reviews.length;
+      updateCarousel();
+    }, 6000);
+  });
+</script>
+
+</section>
+
+
