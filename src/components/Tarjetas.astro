@@ -1,59 +1,50 @@
 ---
 import "../styles/global.css";
 ---
-<section class="bg-white py-16 px-6 sm:px-12 lg:px-24">
-  <div class="max-w-7xl mx-auto text-center mb-12">
-    <h2 class="text-4xl font-bold text-[#0c4f1e] mb-2">Nuestro Equipo Médico</h2>
-    <p class="text-gray-600">Profesionales comprometidos con tu salud dental</p>
-  </div>
 
-  <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-    <!-- Doctor 1 -->
-    <div class="bg-white shadow-md rounded-xl p-6 text-center hover:shadow-xl transition border border-[#7cc518]/20">
-    <div class="w-40 h-40 mx-auto mb-4 rounded-full bg-[#7cc518]/20 flex items-center justify-center">
-        <img src="/imgs/dr1.jpg" alt="Dr. Juan Pérez" class="w-36 h-36 rounded-full object-cover border-4 border-white shadow-md">
-    </div>
-
-      <h3 class="text-xl font-semibold text-[#0c4f1e]">Dr. Juan Pérez</h3>
-      <p class="text-sm text-gray-600">Odontólogo especialista en Endodoncia y Odontología Conservadora.
-</p>
-      <a
-        href="#sobre-nosotros"
-        class="inline-block mt-4 px-5 py-2 text-sm font-semibold text-white bg-[#0c4f1e] rounded hover:bg-[#0a3e18] transition"
-      >
-        Saber más
-      </a>
+  <section class="bg-white py-16 px-6 sm:px-12 lg:px-24">
+    <!-- Intro -->
+    <div class="max-w-4xl mx-auto text-center mb-12">
+      <h2 class="text-4xl font-bold text-[#0c4f1e] mb-4">Sobre Nosotros</h2>
+      <p class="text-gray-600 text-lg leading-relaxed">
+        La <strong>Clínica Dental San Patricio</strong> es una clínica familiar que, desde enero de 2025, continúa con el legado del Dr. Rafael Martín, quien fundó esta consulta hace más de 40 años. Hoy, bajo la dirección del Dr. Ignacio de Lucas y el Dr. Miguel García Linera, mantenemos el trato profesional, cercano y de confianza que siempre nos ha caracterizado.
+      </p>
+      <p class="text-gray-600 text-lg leading-relaxed mt-4">
+        Nuestra vocación es crecer contigo y ofrecerte una odontología moderna, profesional y humana. Te invitamos a conocer a nuestro equipo de especialistas.
+      </p>
     </div>
 
-    <!-- Doctor 2 -->
-    <div class="bg-white shadow-md rounded-xl p-6 text-center hover:shadow-xl transition border border-[#7cc518]/20">
-    <div class="w-40 h-40 mx-auto mb-4 rounded-full bg-[#7cc518]/20 flex items-center justify-center">
-        <img src="/imgs/dr2.jpg" alt="Dr. Juan Pérez" class="w-36 h-36 rounded-full object-cover border-4 border-white shadow-md">
-    </div>
+    <!-- Tarjetas de doctores -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <!-- Ignacio -->
+      <div class="bg-white shadow-md rounded-xl p-6 text-center hover:shadow-xl transition border border-[#7cc518]/20">
+        <div class="w-40 h-40 mx-auto mb-4 rounded-full bg-[#7cc518]/20 flex items-center justify-center">
+          <img src="/imgs/dr2.jpg" alt="Dr. Ignacio de Lucas" class="w-36 h-36 rounded-full object-cover border-4 border-white shadow-md">
+        </div>
+        <h3 class="text-xl font-semibold text-[#0c4f1e]">Dr. Ignacio de Lucas</h3>
+        <p class="text-sm text-gray-600">Director Médico · Cirugía Oral e Implantología</p>
+        <a href="#dr-ignacio" class="inline-block mt-4 px-5 py-2 text-sm font-semibold text-white bg-[#0c4f1e] rounded hover:bg-[#0a3e18] transition">Saber más</a>
+      </div>
 
-      <h3 class="text-xl font-semibold text-[#0c4f1e]">Dr. Ignacio de Lucas</h3>
-      <p class="text-sm text-gray-600">Odontólogo especialista en cirugía oral e implantología</p>
-      <a
-        href="#sobre-nosotros"
-        class="inline-block mt-4 px-5 py-2 text-sm font-semibold text-white bg-[#0c4f1e] rounded hover:bg-[#0a3e18] transition"
-      >
-        Saber más
-      </a>
-    </div>
+      <!-- Miguel -->
+      <div class="bg-white shadow-md rounded-xl p-6 text-center hover:shadow-xl transition border border-[#7cc518]/20">
+        <div class="w-40 h-40 mx-auto mb-4 rounded-full bg-[#7cc518]/20 flex items-center justify-center">
+          <img src="/imgs/dr1.jpg" alt="Dr. Miguel García Linera" class="w-36 h-36 rounded-full object-cover border-4 border-white shadow-md">
+        </div>
+        <h3 class="text-xl font-semibold text-[#0c4f1e]">Dr. Miguel García Linera</h3>
+        <p class="text-sm text-gray-600">Endodoncia · Odontología Conservadora</p>
+        <a href="#dr-miguel" class="inline-block mt-4 px-5 py-2 text-sm font-semibold text-white bg-[#0c4f1e] rounded hover:bg-[#0a3e18] transition">Saber más</a>
+      </div>
 
-    <!-- Doctor 3 -->
-    <div class="bg-white shadow-md rounded-xl p-6 text-center hover:shadow-xl transition border border-[#7cc518]/20">
-    <div class="w-40 h-40 mx-auto mb-4 rounded-full bg-[#7cc518]/20 flex items-center justify-center">
-        <img src="/imgs/dr3.jpg" alt="Dra. Clara Garcete" class="w-36 h-36 rounded-full object-cover border-4 border-white shadow-md">
+      <!-- Clara -->
+      <div class="bg-white shadow-md rounded-xl p-6 text-center hover:shadow-xl transition border border-[#7cc518]/20">
+        <div class="w-40 h-40 mx-auto mb-4 rounded-full bg-[#7cc518]/20 flex items-center justify-center">
+          <img src="/imgs/dr3.jpg" alt="Dra. Clara Garcete" class="w-36 h-36 rounded-full object-cover border-4 border-white shadow-md">
+        </div>
+        <h3 class="text-xl font-semibold text-[#0c4f1e]">Dra. Clara Garcete</h3>
+        <p class="text-sm text-gray-600">Ortodoncia · Atención infantil especializada</p>
+        <a href="#dra-clara" class="inline-block mt-4 px-5 py-2 text-sm font-semibold text-white bg-[#0c4f1e] rounded hover:bg-[#0a3e18] transition">Saber más</a>
+      </div>
     </div>
-      <h3 class="text-xl font-semibold text-[#0c4f1e]">Dra. Clara Garcete</h3>
-      <p class="text-sm text-gray-600">Ortodoncista y especialista en Atención a niños con necesidades especiales</p>
-      <a
-        href="#sobre-nosotros"
-        class="inline-block mt-4 px-5 py-2 text-sm font-semibold text-white bg-[#0c4f1e] rounded hover:bg-[#0a3e18] transition"
-      >
-        Saber más
-      </a>
-    </div>
-  </div>
-</section>
+  </section>
+

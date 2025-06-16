@@ -1,0 +1,79 @@
+---
+import Layout from '../layouts/Layout.astro';
+import "../styles/global.css";
+---
+
+<Layout title="Sobre Nosotros">
+<section id="sobre-nosotros" class="relative bg-white pt-32 pb-24 px-6 sm:px-12 lg:px-24 overflow-hidden isolate scroll-mt-40">
+  <!-- Fondos decorativos -->
+  <div class="absolute bottom-[-120px] left-[-120px] w-[600px] h-[600px] bg-[#e9fbe4] rounded-full blur-3xl opacity-30 -z-10"></div>
+  <div class="absolute top-[-140px] right-[-140px] w-[400px] h-[400px] bg-[#e9fbe4] rounded-full blur-3xl opacity-20 -z-10"></div>
+
+  <!-- Intro -->
+  <div class="max-w-5xl mx-auto text-center mb-16">
+    <h2 class="text-5xl font-bold text-[#0c4f1e] mb-6 relative inline-block after:content-[''] after:block after:w-20 after:h-1 after:bg-[#7cc518] after:mx-auto after:mt-4">
+    Sobre Nosotros
+    </h2>
+
+
+    <p class="text-gray-600 text-lg leading-relaxed mb-4">
+      La <strong>Clínica Dental San Patricio</strong> es una clínica familiar que desde enero de 2025 ha asumido el reto de continuar con el legado y el trabajo que empezó el Dr. Rafael Martín hace más de 40 años. Con el mismo trato profesional, cercano y de confianza que ha caracterizado esta clínica desde sus inicios, el Dr. Ignacio de Lucas y el Dr. Miguel García Linera están aportando su propio estilo, lo que hace que los pacientes se encuentren cómodos y muy satisfechos por su profesionalidad y cercanía.
+    </p>
+
+    <p class="text-gray-600 text-lg leading-relaxed mb-4">
+      Nuestro objetivo a corto plazo es seguir creciendo para poder ofrecer a los pacientes la mejor odontología. Contamos con los siguientes servicios clínicos:
+    </p>
+
+    <div class="text-gray-700 text-lg space-y-1 mb-6">
+    <p>Odontología para niños y adultos</p>
+    <p>Cirugía oral e Implantología</p>
+    <p>Endodoncia</p>
+    <p>Prótesis</p>
+    <p>Ortodoncia para niños y adultos</p>
+    <p>Rehabilitación oral</p>
+    </div>
+
+
+    <p class="text-gray-600 text-lg leading-relaxed">
+      Si usted está leyendo estas líneas y busca una clínica dental, le invitamos a que venga a conocernos y conozca de primera mano a nuestro equipo de profesionales.
+    </p>
+  </div>
+
+    <!-- Tarjetas de doctores -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <!-- Dr. Ignacio -->
+      <div id="dr-ignacio" class="bg-white shadow-md rounded-xl p-6 text-center hover:shadow-xl transition border border-[#7cc518]/20">
+        <div class="w-40 h-40 mx-auto mb-4 rounded-full bg-[#7cc518]/20 flex items-center justify-center">
+          <img src="/imgs/dr2.jpg" alt="Dr. Ignacio de Lucas" class="w-36 h-36 rounded-full object-cover border-4 border-white shadow-md">
+        </div>
+        <h3 class="text-xl font-semibold text-[#0c4f1e]">Dr. Ignacio de Lucas</h3>
+        <p class="text-sm text-gray-600 mt-2">
+          Actual Director Médico, es médico odontólogo especializado en Cirugía Oral e Implantología, con casi 30 años de experiencia profesional. Se encarga de todos los casos quirúrgicos de la clínica. Destaca por su forma de ser tranquila y por su modo de entender la odontología como parte de la medicina, lo que aporta a su consulta mucha seriedad y confianza.
+        </p>
+      </div>
+
+      <!-- Dr. Miguel -->
+      <div id="dr-miguel" class="bg-white shadow-md rounded-xl p-6 text-center hover:shadow-xl transition border border-[#7cc518]/20">
+        <div class="w-40 h-40 mx-auto mb-4 rounded-full bg-[#7cc518]/20 flex items-center justify-center">
+          <img src="/imgs/dr1.jpg" alt="Dr. Miguel García Linera" class="w-36 h-36 rounded-full object-cover border-4 border-white shadow-md">
+        </div>
+        <h3 class="text-xl font-semibold text-[#0c4f1e]">Dr. Miguel García Linera</h3>
+        <p class="text-sm text-gray-600 mt-2">
+          Especialista en Endodoncia y Odontología Conservadora. Es el responsable de toda la práctica médico-clínica de San Patricio. Es una persona seria, cariñosa y muy activa que se está ganando el cariño y confianza de todos los pacientes. Muchos le conocen ya como "el nuevo Dr. Rafael".
+        </p>
+      </div>
+
+      <!-- Dra. Clara -->
+      <div id="dra-clara" class="bg-white shadow-md rounded-xl p-6 text-center hover:shadow-xl transition border border-[#7cc518]/20">
+        <div class="w-40 h-40 mx-auto mb-4 rounded-full bg-[#7cc518]/20 flex items-center justify-center">
+          <img src="/imgs/dr3.jpg" alt="Dra. Clara Garcete" class="w-36 h-36 rounded-full object-cover border-4 border-white shadow-md">
+        </div>
+        <h3 class="text-xl font-semibold text-[#0c4f1e]">Dra. Clara Garcete</h3>
+        <p class="text-sm text-gray-600 mt-2">
+          Especialista en Ortodoncia y en Atención de niños con necesidades especiales. Su sonrisa, su alegría y su experiencia la convierten en una excelente profesional, especialmente querida por los más pequeños.
+        </p>
+      </div>
+    </div>
+  </section>
+</Layout>
+
