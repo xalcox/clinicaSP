@@ -1,0 +1,52 @@
+---
+import Layout from '../layouts/Layout.astro';
+import "../styles/global.css";
+---
+
+<Layout title="Pedir Cita">
+  <section id="pedir-cita" class="relative bg-white pt-32 pb-24 px-6 sm:px-12 lg:px-24 overflow-hidden isolate scroll-mt-40">
+    <!-- Fondos decorativos -->
+    <div class="absolute bottom-[-120px] left-[-120px] w-[600px] h-[600px] bg-[#e9fbe4] rounded-full blur-3xl opacity-30 -z-10"></div>
+    <div class="absolute top-[-140px] right-[-140px] w-[400px] h-[400px] bg-[#e9fbe4] rounded-full blur-3xl opacity-20 -z-10"></div>
+
+    <!-- Intro -->
+    <div class="max-w-3xl mx-auto text-center">
+      <h2 class="text-5xl font-bold text-[#0c4f1e] mb-6 relative inline-block after:content-[''] after:block after:w-20 after:h-1 after:bg-[#7cc518] after:mx-auto after:mt-4">
+        Pedir Cita
+      </h2>
+
+      <p class="text-gray-600 text-lg leading-relaxed mb-4">
+        Reserva tu cita con nosotros de forma rápida y sencilla. Puedes contactarnos por WhatsApp y nos encargaremos de encontrar el mejor momento para ti.
+      </p>
+
+      <p class="text-gray-600 text-lg leading-relaxed mb-8">
+        Nuestro equipo está comprometido con tu salud bucodental y con ofrecerte una atención profesional, cercana y adaptada a tus necesidades. Tanto si eres paciente habitual como si es tu primera vez con nosotros, estaremos encantados de atenderte.
+      </p>
+
+      <!-- Horario -->
+      <div class="bg-[#f5fdf0] border border-[#7cc518]/40 rounded-xl shadow-sm p-6 mb-8 text-left max-w-md mx-auto">
+        <h3 class="text-2xl font-semibold text-[#0c4f1e] mb-4 text-center">Horario de Atención</h3>
+        <ul class="text-gray-700 text-base space-y-2">
+          <li><strong>Lunes a Viernes:</strong> 9:00 – 13:30 y 16:00 – 20:00</li>
+          <li><strong>Sábados y Domingos:</strong> Cerrado</li>
+        </ul>
+      </div>
+
+      <!-- Botón WhatsApp -->
+      <a
+        href="https://wa.me/34XXXXXXXXX?text=Hola%2C+me+gustar%C3%ADa+pedir+una+cita+en+la+Cl%C3%ADnica+Dental+San+Patricio"
+        target="_blank" rel="noopener noreferrer"
+        class="inline-flex items-center justify-center bg-[#25D366] hover:bg-[#1ebe5d] text-white text-lg font-semibold py-3 px-6 rounded-xl shadow-md transition-all duration-300"
+      >
+        <img src="/imgs/whatsapp.png" alt="WhatsApp" class="w-6 h-6 mr-2">
+        Pedir cita por WhatsApp
+      </a>
+
+      <p class="text-sm text-gray-500 mt-4">
+        Responderemos lo antes posible dentro de nuestro horario laboral.
+      </p>
+    </div>
+  </section>
+</Layout>
+
+
