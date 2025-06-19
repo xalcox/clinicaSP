@@ -30,15 +30,7 @@ import Footer from "../components/Footer.astro";
 		
 	</head>
 	<body>
-		<script>
-			const validPaths = ["/", "/citas", "/sobre-nosotros"];
-			const currentPath = window.location.pathname;
-
-			if (!validPaths.includes(currentPath)) {
-				window.location.href = "/";
-			}
-		</script>
-
+		
 		<slot />
 		<Header />
 
