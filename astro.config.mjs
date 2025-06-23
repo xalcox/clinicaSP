@@ -1,9 +1,15 @@
 // @ts-check
 import { defineConfig } from "astro/config";
 import tailwindcss from "@tailwindcss/vite";
-// https://astro.build/config
+import sitemap from "astro-sitemap"; 
+
 export default defineConfig({
+  site: "https://clinicadentalsanpatricio.com", 
   vite: {
     plugins: [tailwindcss()],
   },
+  integrations: [sitemap()], 
 });
+
+
+
